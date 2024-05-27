@@ -4,10 +4,10 @@ config('../.env')
 
 const MyConfig = {
     mysql: {
-        host:  'localhost', //process.env.MYSQL_HOST ||
-        user:  'root', //process.env.MYSQL_USER ||
-        password:  'Enter12345', //process.env.MYSQL_PASSWORD ||
-        database: 'itj_cannabis' //process.env.MYSQL_DB || 
+        host:  process.env.MYSQL_HOST ||'localhost', 
+        user:  process.env.MYSQL_USER || 'root', 
+        password:  process.env.MYSQL_PASSWORD || 'Enter12345', 
+        database: process.env.MYSQL_DB || 'itj_cannabis' 
     }
 }
 
